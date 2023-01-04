@@ -175,7 +175,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
 .home_inf{
     height: 150px;
     width: 90%;
-    margin: 30px auto 0px;
+    margin: 25px auto 0px;
     background-color: #c9ad8e;
     border-radius:10px 10px;
     column-count:2;
@@ -183,6 +183,37 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
     column-gap: 30px;
     padding:15px 10px 0;
     text-align: center;
+}
+.home_mis{
+    height: auto;
+    width: 90%;
+    margin: 30px auto 0px;
+    background-color: #F3F3FA;
+    border-radius:10px 10px;
+    padding: 10px 20px 10px;
+}
+#home_mistitle{
+    text-align: center;
+}
+.home_mistitle{
+    width: 90%;
+    margin: auto;
+    opacity: 70;
+    color: #aeacaa ;
+    size: 20px;
+}
+.home_mission{
+    height: auto;
+    width: 100%;
+    margin: 15px auto 0px;
+    background-color: #eadfd5d1;
+    border-radius:10px 10px;
+    padding: 10px 20px 10px;
+}
+#mis_word{
+    float: right;
+    margin-top: 5px;
+    color: #7B7B7B;
 }
 /*排名*/
 .dropdown-toggle {
