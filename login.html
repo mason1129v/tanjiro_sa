@@ -14,7 +14,7 @@
     </script>
     <link rel="stylesheet" href="asset/css/index.css">
     <link rel="stylesheet" href="asset/css/basic.css">
-    <title>消費紀錄</title>
+    <title>登入</title>
 </head>
 
 <body>
@@ -234,49 +234,25 @@
         </div>
     </div>
     <!--header end-->
+    <!--登入-->
     <div class="main_body">
-        <!--紀錄-->
-        <div class="tab-pane main_body rec_bg" id="pills-rec" role="tabpanel" aria-labelledby="pills-rec-tab">
-
-            <p id="spendwd">消費紀錄</p>
-            <form action="">
-                <h5 id="spendtxt">AI 智慧喜</h5>
-                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" data-bs-toggle="modal"
-                    data-bs-target="#detailModal1" data-bs-dismiss="modal">
-                <h6 id="spenddate">2022/12/29 03:40</h6>
-                <hr class="rec_hr">
-            </form>
-            <form action="">
-                <h5 id="spendtxt2">低碳FOOD</h5>
-                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" data-bs-toggle="modal"
-                    data-bs-target="#detailModal1" data-bs-dismiss="modal">
-                <h6 id="spenddate">2022/12/29 04:04</h6>
-                <hr class="rec_hr">
-            </form>
-            <form action="">
-                <h5 id="spendtxt2">AI XXX</h5>
-                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" data-bs-toggle="modal"
-                    data-bs-target="#detailModal1" data-bs-dismiss="modal">
-                <h6 id="spenddate">2022/12/29 04:15</h6>
-                <hr class="rec_hr">
-            </form>
-        </div>
-    </div>
-    <!--消費詳細資訊-->
-    <div class="modal fade" id="detailModal1" aria-hidden="true" aria-labelledby="detailModalLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="detailModalLabel">消費詳細資訊</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="mid_body">
+            <h3 class="modal-title">登入</h3>
+            <form action="index.html">
+                <div class="mb-3">
+                    <label for="login_id" class="col-form-label">請輸入身份證字號:</label>
+                    <input type="text" class="form-control" id="login_id">
                 </div>
-                <div class="modal-body">
-                    <h4>AI 智慧喜</h4>
-                    <h5>日期：2022/12/29 03:40</h5>
-                    <h4>消費內容：</h4>
-                    <h5>洗衣件數：</h5>
-                    <h5>總金額：</h5>
+                <div class="mb-3">
+                    <label for="login_psd" class="col-form-label">請輸入密碼:</label>
+                    <input type="text" class="form-control" id="login_psd">
                 </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <input type="submit" class="btn btn-primary" value="登入">
+                </div>
+            </form>
+            <div class="d-grid gap-2">
+                <a class="btn" href="signup.html" style="color:#6C6C6C;">還沒有會員嗎?前往註冊</a>
             </div>
         </div>
     </div>
@@ -303,7 +279,7 @@
                 <p class="b_nav_t">合作廠商</p>
             </div>
         </a>
-        <a class="nav-link b_nav_w" href="index.html">
+        <a class="nav-link active b_nav_w" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-house-door"
                 viewBox="0 0 16 16">
                 <path
@@ -323,7 +299,7 @@
                 <p class="b_nav_t">碳排排名</p>
             </div>
         </a>
-        <a class="nav-link active b_nav_w" href="record.html">
+        <a class="nav-link b_nav_w" href="record.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-card-list"
                 viewBox="0 0 16 16">
                 <path
