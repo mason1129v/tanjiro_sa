@@ -14,7 +14,7 @@
     </script>
     <link rel="stylesheet" href="asset/css/index.css">
     <link rel="stylesheet" href="asset/css/basic.css">
-    <title>點數資訊</title>
+    <title>點數兌換確認</title>
 </head>
 
 <body>
@@ -234,222 +234,19 @@
         </div>
     </div>
     <!--header end-->
+    <!--確認兌換服務-->
     <div class="main_body">
-        <div class="tab-pane main_body point_bg" id="pills-point" role="tabpanel" aria-labelledby="pills-point-tab">
-            <div class="pnt_inf">
-                <p class="pnt_inf_t">累積點數</p>
-                <p class="pnt_inf_n">888888</p>
-                <div class="break_r"></div>
-                <p class="pnt_inf_t">即將到期</p>
-                <p class="pnt_inf_n">400000</p>
-                <p style="font-size: 8;">~2023/01/31</p>
-            </div>
-            <div class="btn_wrap">
-                <button class="btn btn-primary pnt_rec_btn" data-bs-toggle="modal"
-                    data-bs-target="#pntrecModal">點數增減紀錄</button>
-            </div>
-            <div class="wrap_pnt">
-                <nav>
-                    <div class="nav nav-tabs pnt_tab nav-pills" id="nav-tab" role="tablist">
-                        <button class="nav-link active pnt_tab_btn" id="pnt-exc-tab" data-bs-toggle="tab"
-                            data-bs-target="#pnt-exc" type="button" role="tab" aria-controls="pnt-exc"
-                            aria-selected="true">點數兌換</button>
-                        <button class="nav-link pnt_tab_btn" id="pnt_svc-tab" data-bs-toggle="tab"
-                            data-bs-target="#pnt_svc" type="button" role="tab" aria-controls="pnt_svc"
-                            aria-selected="false">可用服務</button>
-                    </div>
-                </nav>
-                <!--兌換服務-->
-                <div class="tab-content pnt_cnt" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="pnt-exc" role="tabpanel" aria-labelledby="pnt-exc-tab">
-                        <button class="btn btn_type" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsefood" aria-expanded="false" aria-controls="collapsefood">
-                            食
-                        </button>
-
-                        <div class="collapse clps" id="collapsefood">
-                            <div class="card card-body" style="padding:5px 0;">
-                                <form action="point_exc.html">
-                                    <div class="voucher">
-                                        <div>
-                                            <p class="v_title">可食用牛肉500g</p>
-                                            <p class="v_price">所需點數:800</p>
-                                            <p class=" v_dtl">使用期限:兌換後一個月內</p>
-                                        </div>
-                                        <div class="wrap_pexc">
-                                            <input type="submit" class="btn btn-primary pnt_exchange"
-                                                value="兌換"></input>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <button class="btn btn_type" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseclo" aria-expanded="false" aria-controls="collapseclo">
-                            衣
-                        </button>
-
-                        <div class="collapse clps" id="collapseclo">
-                            <div class="card card-body">
-                                <form action="point_exc.html">
-                                    <div class="voucher">
-                                        <div>
-                                            <p class="v_title">可購買新衣服1.5kg</p>
-                                            <p class="v_price">所需點數:1500</p>
-                                            <p class=" v_dtl">使用期限:兌換後一個月內</p>
-                                        </div>
-                                        <div class="wrap_pexc">
-                                            <input type="submit" class="btn btn-primary pnt_exchange"
-                                                value="兌換"></input>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <button class="btn btn_type" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapselive" aria-expanded="false" aria-controls="collapselive">
-                            住
-                        </button>
-
-                        <div class="collapse clps" id="collapselive">
-                            <div class="card card-body">
-                                <form action="point_exc.html">
-                                    <div class="voucher">
-                                        <div>
-                                            <p class="v_title">吹冷氣1hr</p>
-                                            <p class="v_price">所需點數:2500</p>
-                                            <p class=" v_dtl">使用期限:兌換後一個月內</p>
-                                        </div>
-                                        <div class="wrap_pexc">
-                                            <input type="submit" class="btn btn-primary pnt_exchange"
-                                                value="兌換"></input>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <button class="btn btn_type" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsetrans" aria-expanded="false" aria-controls="collapsetrans">
-                            行
-                        </button>
-
-                        <div class="collapse clps" id="collapsetrans">
-                            <div class="card card-body">
-                                <form action="point_exc.html">
-                                    <div class="voucher">
-                                        <div>
-                                            <p class="v_title">行駛自家車200km</p>
-                                            <p class="v_price">所需點數:120~5000</p>
-                                            <p class=" v_dtl">使用期限:兌換後一個月內</p>
-                                        </div>
-                                        <div class="wrap_pexc">
-                                            <input type="submit" class="btn btn-primary pnt_exchange"
-                                                value="兌換"></input>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <button class="btn btn_type" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseedu" aria-expanded="false" aria-controls="collapseedu">
-                            育樂
-                        </button>
-                        <div class="collapse clps" id="collapseedu">
-                            <div class="card card-body">
-                                <form action="point_exc.html">
-                                    <div class="voucher">
-                                        <div>
-                                            <p class="v_title">觀看NETFLIX 1hr</p>
-                                            <p class="v_price">所需點數:300~500</p>
-                                            <p class=" v_dtl">使用期限:兌換後一個月內</p>
-                                        </div>
-                                        <div class="wrap_pexc">
-                                            <input type="submit" class="btn btn-primary pnt_exchange"
-                                                value="兌換"></input>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!--使用服務-->
-                    <div class="tab-pane fade" id="pnt_svc" role="tabpanel" aria-labelledby="pnt_svc-tab">
-                        <form action="" data-bs-toggle="modal" data-bs-target="#pntuseModal">
-                            <div class="voucher">
-                                <div>
-                                    <p class="v_title">觀看NETFLIX 1hr</p>
-                                    <p class=" v_dtl">使用期限:2023/1/31</p>
-                                </div>
-                                <div class="wrap_pexc">
-                                    <input type="submit" class="btn btn-primary pnt_exchange" value="使用"></input>
-                                </div>
-                            </div>
-                        </form>
-                        <form action="" data-bs-toggle="modal" data-bs-target="#pntuseModal">
-                            <div class="voucher">
-                                <div>
-                                    <p class="v_title">吹冷氣1hr</p>
-                                    <p class=" v_dtl">使用期限:2023/2/10</p>
-                                </div>
-                                <div class="wrap_pexc">
-                                    <input type="submit" class="btn btn-primary pnt_exchange" value="使用"></input>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+        <div class="mid_body">
+            <form action="">
+                <p class="check_exc_t">請確認兌換服務內容：</p>
+                <p>可食用牛肉500g</p>
+                <p>所需點數：800</p>
+                <p>使用期限：2023/1/31</p>
+                <div class="d-grid gap-2">
+                    <input type="submit" value="確認兌換" class="btn btn-primary">
+                    <a href="point.html" role="button" class="btn btn-primary">取消兌換</a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!--點數增減紀錄-->
-    <div class="modal fade" id="pntrecModal" aria-hidden="true" aria-labelledby="pntrecModalLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="pntrecModalLabel">點數增減紀錄</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div>
-                            <p>日期：2022/12/31</p>
-                            <p>點數增減：+100</p>
-                            <p>說明：使用智慧洗</p>
-                        </div>
-                        <hr>
-                    </form>
-                    <form>
-                        <div>
-                            <p>日期：2022/12/31</p>
-                            <p>點數增減：+100</p>
-                            <p>說明：使用智慧洗</p>
-                        </div>
-                        <hr>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--確認使用服務-->
-    <div class="modal fade" id="pntuseModal" aria-hidden="true" aria-labelledby="pntuseModalLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="pntexcModalLabel">確認使用服務</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form action="">
-                    <div class="modal-body">
-                        <p class="check_exc_t">請確認使用服務內容：</p>
-                        <p>吹冷氣1hr</p>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <div class="d-grid gap-2">
-                            <input type="submit" value="確認使用" class="btn btn-primary">
-                        </div>
-                    </div>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
     <!--底部-->
