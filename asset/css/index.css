@@ -215,6 +215,16 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
     margin-top: 5px;
     color: #7B7B7B;
 }
+#mission{
+    height: auto;
+    width: 100%;
+    background-color: #eadfd5d1;
+    padding: 10px 20px 10px;
+    color: black;
+    font-size: 18px;
+    border-color: #eadfd5d1;
+    margin: 15px auto 0px;
+}
 /*排名*/
 .dropdown-toggle {
     margin-bottom: 10px;
