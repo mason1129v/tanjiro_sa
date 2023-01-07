@@ -70,18 +70,13 @@
                             隱私權條款
                         </button>
                         <form>
-                            <input type="submit" class="nav-item" value="登出">
-
-                            </input>
+                            <a href="before_login.html" class="nav-item" id="logouta">登出
+                            </a>
                         </form>
                     </div>
                 </div>
             </div>
             <p class="navbar-brand t_fontsize">碳制郎</p>
-            <!--未登入前-->
-            <a class="btn" style="padding:auto; height:50px; border:1px solid black;" href="login.html" role="button">
-                測試用<br>(登入註冊)
-            </a>
             <!--登入後-->
             <a class="btn_mem" href="member.html" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-person-circle"
@@ -239,45 +234,24 @@
         <div class="tab-pane main_body rec_bg" id="pills-rec" role="tabpanel" aria-labelledby="pills-rec-tab">
 
             <p id="spendwd">消費紀錄</p>
-            <form action="">
+            <form action="record_detail.html">
                 <h5 id="spendtxt">AI 智慧喜</h5>
-                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" data-bs-toggle="modal"
-                    data-bs-target="#detailModal1" data-bs-dismiss="modal">
+                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt">
                 <h6 id="spenddate">2022/12/29 03:40</h6>
                 <hr class="rec_hr">
             </form>
-            <form action="">
+            <form action="record_detail.html">
                 <h5 id="spendtxt2">低碳FOOD</h5>
-                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" data-bs-toggle="modal"
-                    data-bs-target="#detailModal1" data-bs-dismiss="modal">
+                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt">
                 <h6 id="spenddate">2022/12/29 04:04</h6>
                 <hr class="rec_hr">
             </form>
-            <form action="">
+            <form action="record_detail.html">
                 <h5 id="spendtxt2">AI XXX</h5>
-                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" data-bs-toggle="modal"
-                    data-bs-target="#detailModal1" data-bs-dismiss="modal">
+                <input class="btn btn-primary" type="submit" value="詳細資訊" id="spendbt" \>
                 <h6 id="spenddate">2022/12/29 04:15</h6>
                 <hr class="rec_hr">
             </form>
-        </div>
-    </div>
-    <!--消費詳細資訊-->
-    <div class="modal fade" id="detailModal1" aria-hidden="true" aria-labelledby="detailModalLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="detailModalLabel">消費詳細資訊</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h4>AI 智慧喜</h4>
-                    <h5>日期：2022/12/29 03:40</h5>
-                    <h4>消費內容：</h4>
-                    <h5>洗衣件數：</h5>
-                    <h5>總金額：</h5>
-                </div>
-            </div>
         </div>
     </div>
     <!--底部-->

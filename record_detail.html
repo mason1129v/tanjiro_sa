@@ -14,7 +14,7 @@
     </script>
     <link rel="stylesheet" href="asset/css/index.css">
     <link rel="stylesheet" href="asset/css/basic.css">
-    <title>登入</title>
+    <title>消費紀錄</title>
 </head>
 
 <body>
@@ -70,7 +70,7 @@
                             隱私權條款
                         </button>
                         <form>
-                            <a href="before_login.html" class="nav-item fade" id="logouta">登出
+                            <a href="before_login.html" class="nav-item" id="logouta">登出
                             </a>
                         </form>
                     </div>
@@ -229,28 +229,24 @@
         </div>
     </div>
     <!--header end-->
-    <!--登入-->
     <div class="main_body">
-        <div class="mid_body">
-            <h3 class="modal-title">登入</h3>
-            <form action="index.html">
-                <div class="mb-3">
-                    <label for="login_id" class="col-form-label">請輸入身份證字號:</label>
-                    <input type="text" class="form-control" id="login_id">
-                </div>
-                <div class="mb-3">
-                    <label for="login_psd" class="col-form-label">請輸入密碼:</label>
-                    <input type="password" class="form-control" id="login_psd">
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <input type="submit" class="btn btn-primary" id="membtn" value="登入">
-                </div>
+        <!--紀錄-->
+        <div class="mid_body" style="margin-bottom: 30px;">
+            <form action="">
+                <h4>AI 智慧喜</h4>
+                <h5>日期：2022/12/29 03:40</h5>
+                <h4>消費內容：</h4>
+                <h5>洗衣件數：</h5>
+                <h5>總金額：</h5>
             </form>
-            <div class="d-grid gap-2">
-                <a class="btn" href="signup.html" style="color:#6C6C6C;">還沒有會員嗎?前往註冊</a>
-            </div>
         </div>
+        <div style="width: 100%; text-align: center;">
+            <a class="btn btn-primary" id="membtn" href="record.html">返回</a>
+        </div>
+
     </div>
+    </div>
+    <!--消費詳細資訊-->
     <!--底部-->
     <nav class="nav position-fixed bottom-0 bg-secondary nav_width" aria-label="Secondary navigation"
         style="background-color: #c9ad8e !important; height: 120px;">
@@ -294,7 +290,7 @@
                 <p class="b_nav_t">碳排排名</p>
             </div>
         </a>
-        <a class="nav-link b_nav_w" href="#">
+        <a class="nav-link active b_nav_w" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-card-list"
                 viewBox="0 0 16 16">
                 <path
