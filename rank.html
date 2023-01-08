@@ -230,7 +230,8 @@
     </div>
     <!--header end-->
     <div class="main_body">
-        <div class="tab-pane main_body rank_bg" id="pills-rank" role="tabpanel" aria-labelledby="pills-rank-tab">
+        <div class="tab-pane main_body rank_bg" id="pills-rank" role="tabpanel" aria-labelledby="pills-rank-tab"
+            style="padding-bottom: 10px;">
             <form action="">
                 <select id="area-list" onchange="changeArea(this.selectedIndex)" class="area_drop"></select>
                 <select id="sector-list" class="area_drop"></select>
@@ -276,15 +277,50 @@
                             <td>田OO</td>
                             <td>7.456</td>
                         </tr>
-                        <tr class="table-primary">
-                            <th scope="row">76</th>
-                            <td>王OO</td>
-                            <td>10.767</td>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>趙OO</td>
+                            <td>7.679</td>
                         </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>孫OO</td>
+                            <td>7.987</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>李OO</td>
+                            <td>8.003</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>宋OO</td>
+                            <td>8.253</td>
+                        </tr>
+
                     </tbody>
                 </table>
             </form>
+
         </div>
+        <form>
+            <table class="table table-striped" style="text-align:center; position:fixed;
+    bottom: 100; width: 100%;">
+                <thead>
+                    <tr>
+                        <th scope="row" colspan="3" style="text-align: left;">您所在的地區:XX區</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <th scope="row">76</th>
+                        <td>王OO</td>
+                        <td>10.767</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </div>
 
     <!--底部-->
