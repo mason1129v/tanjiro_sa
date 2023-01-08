@@ -252,13 +252,20 @@
                     </div>
                 </div>
             </div>
-            <div class="home_inf">
+
+            <div class="home_inf" style="padding:10px">
                 <img decoding="async" src="asset/img/mem_pic1.jpg" class="img-circle"
-                    style="width: 82px; height: 82px;">
-                <p class="pnt_inf_t">炭治郎</p>
+                    style="width: 120px; height: 120px;">
+                <!--會員頭貼-->
                 <div class="break_r"></div>
-                <p class="pnt_inf_t">本月碳排放量</p>
-                <p class="pnt_inf_n">10.234t</p>
+                <!--會員姓名-->
+                <p class="pnt_inf_t" style="margin: 0 auto;"><b>炭治郎</b></p>
+
+                <button class="carbonbtn" data-bs-toggle="modal" data-bs-target="#carbonModal">
+                    <p class="pnt_inf_t">本月碳排放量</p>
+                    <p class="home_c">10.234t</p>
+                    <!--會員碳排量-->
+                </button>
             </div>
             <div class="home_mis">
                 <h4 id="home_mistitle">每日任務</h4>
@@ -275,6 +282,27 @@
                     <h6 id="mis_word">-150 碳排</h6>
                     <h5>3. 挑戰以腳代步</h5>
                 </a>
+            </div>
+        </div>
+    </div>
+    <!--碳排增減紀錄-->
+    <div class="modal fade" id="carbonModal" aria-hidden="true" aria-labelledby="carbonModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="carbonModalLabel">碳排增減紀錄</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <p>日期：2022/12/31</p>
+                            <p>碳排增減：+100</p>
+                            <p>說明：使用智慧洗</p>
+                        </div>
+                        <hr>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
