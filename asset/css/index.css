@@ -10,7 +10,35 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
 .nav_width{
     width: 100%;
 } 
+.container1 {
+    font-size: 0;
+    position:relative;
+    top:0;
+    left:0;
+    width: 2000px;
+    height: 2000px;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    transform: translate3d(0, 0, 0)
+}
+.inner {
+    width: 5760px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/bg.jpg');
+    animation: move 40s linear 0s infinite;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
 
+@keyframes move {
+    100% {
+    transform: translateX(-66.6666%);
+    }
+}
 #nav_bg{
     background-color: #c9ad8e !important;
 }
@@ -401,6 +429,13 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
     justify-content: space-between;
     padding: 3px;
 }
+#act_back{
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
 .v_title{
     font-size: 20px;
     width: 200px;
@@ -509,12 +544,4 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
     border-radius: 10px;
     margin: 100px auto;
     padding: 10px;
-}
-/*任務*/
-#act_back{
-    margin-top: 65px;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-    color: black;
 }
