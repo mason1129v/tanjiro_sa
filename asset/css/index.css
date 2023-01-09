@@ -393,7 +393,7 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
 }
 .voucher{
     width: 100%;
-    height: 115px;
+    height: 135px;
     background-color: white;
     border-radius: 10px;
     margin:10px auto;
@@ -509,4 +509,12 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
     border-radius: 10px;
     margin: 100px auto;
     padding: 10px;
+}
+/*任務*/
+#act_back{
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    color: black;
 }
